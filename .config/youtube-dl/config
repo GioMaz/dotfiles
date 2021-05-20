@@ -1,0 +1,1 @@
+-o ~/Downloads/%(playlist_index)s-%(id)s-%(title)s.%(ext)s

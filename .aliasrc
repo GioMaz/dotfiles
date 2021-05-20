@@ -1,0 +1,72 @@
+# Setting PATH for Python 3.8
+# The original version is saved in .zprofile.pysave
+# PATH='/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}'
+# export PATH
+
+# ALIASES
+# school programs
+#   alias voti='~/Python/scuola/scuola -i g'
+#  alias media='~/Python/scuola/tab_media'
+#  alias medie='~/Python/scuola/tab_media'
+# alias agenda='~/Python/scuola/scuola -i a'
+#   alias oggi='~/Python/scuola/scuola -i o'
+#     alias td='~/Python/scuola/scuola -i o'
+# alias domani='~/Python/scuola/scuola -i d'
+#     alias tm='~/Python/scuola/scuola -i d'
+# alias scuola='~/Python/scuola/scuola -i a && echo && /Users/giovanni/python/scuola/tab_media'
+# alias orario='open -a Safari https://www.barsanti.edu.it/orariolab/Classi/4BI.html'
+#  alias class='open -a Safari https://classroom.google.com/u/1/h' 
+#   alias scan='open -a Safari https://drive.google.com/drive/u/1/folders/12egK454ETb3y6xWVnXf-orA48w8yVdc1' 
+# alias drive='cd ~/Python/google_api/ && ./main'
+#   alias folder='~/Python/google_api/2main'
+
+  alias voti='classeviva voti'
+ alias medie='media'
+alias agenda='classeviva agenda'
+  alias oggi='classeviva oggi'
+alias domani='classeviva domani'
+
+# coronavirus information
+     alias corona='covid'
+alias coronavirus='covid'
+         alias co='covid'
+
+# raspberrypi programs
+alias inc='~/Python/utilities/amixer -c +'
+alias dec='~/Python/utilities/amixer -c -'
+
+# system programs
+alias bat='pmset -g batt | grep % | sed -e "s/.*)\(.*\)%.*/\1/" | xargs'
+alias batt='pmset -g batt | grep % | sed -e "s/.*)\(.*\)%.*/\1/" | xargs'
+alias server='ifconfig | grep 192.168.1. && python3 -m http.server 1234'
+alias vpn='sudo openvpn /Users/giovanni/VPN/giovanni.ovpn'
+alias speed='speedtest'
+alias yt='ytfzf -t '
+alias q='exit'
+alias e='exit'
+alias mem='df -h'
+alias disk='df -h /dev/sdb1'
+alias f='lfimg'
+alias vim='nvim'
+alias vi='nvim'
+alias pm='pulsemixer'
+alias tempo='curl wttr.in'
+alias gal='sxiv -tbf .'
+
+# shell colors
+alias ls='ls --color=auto'
+alias l='ls -l'
+alias ll='ls -al'
+alias grep='grep --color=auto'
+ alias ip='ip -color=auto'
+
+# directory alias
+alias nv='cd ~/.config/nvim/ && nvim init.vim'
+alias ardcomp='arduino-cli compile -b arduino:avr:uno -v'
+alias ardupl='arduino-cli upload -p /dev/ttyACM0 -b arduino:avr:uno'
+alias c+="g++ grader.cpp && ./a.out"
+# alias vimrc='vim ~/.config/nvim/init.vim'
+# alias vmrc='vim ~/.vimrc'
+# alias vrc='vim ~/.vimrc'
+# alias vr='vim ~/.vimrc'
+# alias vc='vim ~/.vimrc'

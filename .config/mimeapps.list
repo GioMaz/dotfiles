@@ -1,0 +1,5 @@
+[Added Associations]
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+image/jpeg=sxiv.desktop;
+image/png=sxiv.desktop;
+text/plain=nvim.desktop;
