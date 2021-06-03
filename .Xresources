@@ -1,29 +1,33 @@
 ! ~/.Xresources
 
 !! URXVT APPEARANCE
-URxvt.font:                 xft:SF Mono:size=11
-! URxvt.boldFont:           xft:robotomono nerd font:size=11
-! URxvt.italicFont:         xft:robotomono nerd font:size=11
-! URxvt.boldItalicFont:     xft:robotomono nerd font:size=11
-
-! URxvt.font:		xft:DejaVu Sans Mono:size=11
-! URxvt.boldFont: 	xft:DejaVu Sans Mono:style=Bold
-! URxvt.italicFont:	xft:DejaVu Sans Mono:style=Oblique
-! URxvt.boldItalicFont:	xft:DejaVu Sans Mono:style=Bold Oblique
-
+URxvt.font: xft:Source Code Pro:pixelsize=13:antialias=true:autohint=true;
 URxvt.letterSpace: -1
-URxvt.scrollBar:            false
-URxvt.saveLines:            65535
-! URxvt.internalBorder:       30
-URxvt.cursorBlink: 1
-! URxvt.cursorUnderline: 1
-Urxvt.clipboardAutocopy:    true
-URxvt.keysym.Shift-Control-V: eval:paste_clipboard
-URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.scrollBar: false
+URxvt.saveLines: 65535
+URxvt.iso14755: false
+
+! PLUGINS
+URxvt.perl-lib: /usr/lib/urxvt/perl/
+! ! search for font-size, keyboard-select... on github
+URxvt.perl-ext-common: font-size,eval,keyboard-select
+
+! font-size
+URxvt.keysym.C-Up:     perl:font-size:increase
+URxvt.keysym.C-Down:   perl:font-size:decrease
+URxvt.keysym.C-S-Up:   perl:font-size:incglobal
+URxvt.keysym.C-S-Down: perl:font-size:decglobal
+URxvt.keysym.C-equal:  perl:font-size:reset
+URxvt.keysym.C-slash:  perl:font-size:show
+! keyboard-select
+URxvt.keysym.M-s: perl:keyboard-select:activate
+URxvt.keysym.M-r: perl:keyboard-select:search
+URxvt.keyboard-select.clipboard: true
+! eval (copy - paste)
 URxvt.keysym.Control-Meta-c: builtin-string:
 URxvt.keysym.Control-Meta-v: builtin-string:
-! URxvt.iso14755: truevim 
-! URxvt.iso14755_52: false
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 
 ! *.color0:       #1e1e1e
 ! *.color1:       #d16969
@@ -51,25 +55,25 @@ URxvt.keysym.Control-Meta-v: builtin-string:
 ! *.background:   #1e1e1e
 ! *.cursorColor:  #d4d4d4
 
-*.foreground:   #ABB2BF
-*.background:   #282C34
-*.cursorColor:  #ABB2BF
-*.color0:       #5C6370
-*.color8:       #4B5263
-*.color1:       #E06C75
-*.color9:       #BE5046
-*.color2:       #98C379
-*.color10:      #98C379
-*.color3:       #E5C07B
-*.color11:      #D19A66
-*.color4:       #61AFEF
-*.color12:      #61AFEF
-*.color5:       #C678DD
-*.color13:      #C678DD
-*.color6:       #56B6C2
-*.color14:      #56B6C2
-*.color7:       #ABB2BF
-*.color15:      #3E4452
+! *.foreground:   #ABB2BF
+! *.background:   #282C34
+! *.cursorColor:  #ABB2BF
+! *.color0:       #5C6370
+! *.color8:       #4B5263
+! *.color1:       #E06C75
+! *.color9:       #BE5046
+! *.color2:       #98C379
+! *.color10:      #98C379
+! *.color3:       #E5C07B
+! *.color11:      #D19A66
+! *.color4:       #61AFEF
+! *.color12:      #61AFEF
+! *.color5:       #C678DD
+! *.color13:      #C678DD
+! *.color6:       #56B6C2
+! *.color14:      #56B6C2
+! *.color7:       #ABB2BF
+! *.color15:      #3E4452
 
 ! *background: #282828
 ! *foreground: #ebdbb2
@@ -90,48 +94,6 @@ URxvt.keysym.Control-Meta-v: builtin-string:
 ! *color7:  #a89984
 ! *color15: #ebdbb2
 
-! #define base00 #1B2B34
-! #define base01 #343D46
-! #define base02 #4F5B66
-! #define base03 #65737E
-! #define base04 #A7ADBA
-! #define base05 #C0C5CE
-! #define base06 #CDD3DE
-! #define base07 #D8DEE9
-! #define base08 #EC5f67
-! #define base09 #F99157
-! #define base0A #FAC863
-! #define base0B #99C794
-! #define base0C #5FB3B3
-! #define base0D #6699CC
-! #define base0E #C594C5
-! #define base0F #AB7967
-! *.foreground:   base05
-! *.background:   base00
-! *.cursorColor:  base05
-! *.color0:       base00
-! *.color1:       base08
-! *.color2:       base0B
-! *.color3:       base0A
-! *.color4:       base0D
-! *.color5:       base0E
-! *.color6:       base0C
-! *.color7:       base05
-! *.color8:       base03
-! *.color9:       base08
-! *.color10:      base0B
-! *.color11:      base0A
-! *.color12:      base0D
-! *.color13:      base0E
-! *.color14:      base0C
-! *.color15:      base07
-! *.color16:      base09
-! *.color17:      base0F
-! *.color18:      base01
-! *.color19:      base02
-! *.color20:      base04
-! *.color21:      base06
-
 ! *.foreground: #F8F8F2
 ! *.background: #282A36
 ! *.color0:     #000000
@@ -150,3 +112,24 @@ URxvt.keysym.Control-Meta-v: builtin-string:
 ! *.color14:    #9AEDFE
 ! *.color7:     #BFBFBF
 ! *.color15:    #E6E6E6
+
+*.foreground:  #ffffff
+*.background:  #000000
+*.cursorColor: #ffffff
+*.color0:      #000000
+*.color8:      #555753
+*.color1:      #cc0000
+*.color9:      #ef2929
+*.color2:      #4e9a06
+*.color10:     #8ae234
+*.color3:      #c4a000
+*.color11:     #fce94f
+*.color4:      #3465a4
+*.color12:     #729fcf
+*.color5:      #75507b
+*.color13:     #ad7fa8
+*.color6:      #06989a
+*.color14:     #34e2e2
+*.color7:      #d3d7cf
+*.color15:     #eeeeec
+*.colorBD:     #ffffff
