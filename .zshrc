@@ -2,11 +2,7 @@
 
 # Prompt
 autoload -U colors && colors
-# PROMPT="%1~ ➜ "
-# PROMPT="%1~ λ "
-# PROMPT="%B%1~ %%%b "
-# PROMPT="%{$fg[green]%}%~ %{$fg[magenta]%}%% %{$reset_color%}"
-PROMPT="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+PROMPT="%B%{$fg[green]%}%n@%M%{$reset_color%}:%{$fg[blue]%}%~%{$reset_color%}$ "
 
 # Editor mode (emacs)
 bindkey -e
