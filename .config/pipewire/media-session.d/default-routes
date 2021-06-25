@@ -1,0 +1,9 @@
+{
+  "default.route.alsa_card.pci-0000_00_1b.0:profile:off": [ ],
+  "default.route.alsa_card.pci-0000_00_1b.0:profile:output:analog-stereo+input:analog-stereo": [ "analog-output-speaker" ],
+  "default.route.bluez_card.9C_97_89_09_D2_8C:profile:headset-head-unit-cvsd": [ "headset-output" ],
+  "default.route.bluez_card.9C_97_89_09_D2_8C:output:headset-output": { "mute": false, "volumes": [ 0.121857, 0.121857 ], "channels": [ "FL", "FR" ], "latencyOffsetNsec": 0 },
+  "default.route.alsa_card.pci-0000_00_1b.0:output:analog-output-speaker": { "mute": false, "volumes": [ 0.399992, 0.399992 ], "channels": [ "FL", "FR" ] },
+  "default.route.alsa_card.pci-0000_00_1b.0:input:analog-input-internal-mic": { "mute": false, "volumes": [ 0.316288, 0.316288 ], "channels": [ "FL", "FR" ] },
+  "default.route.bluez_card.9C_97_89_09_D2_8C:profile:a2dp-sink-sbc": [ "headset-output" ]
+}

@@ -1,0 +1,9 @@
+{
+  "restore.stream.Input/Audio.application.name:PulseAudio Volume Control": { "volume": 1.000000, "mute": false, "volumes": [ 1.000000, 1.000000 ], "channels": [ "FL", "FR" ] },
+  "restore.stream.Output/Audio.application.name:Firefox": { "volume": 1.000000, "mute": false, "volumes": [ 1.000000, 1.000000 ], "channels": [ "FL", "FR" ] },
+  "restore.stream.Audio/Sink.node.name:alsa_output.pci-0000_00_1b.0.analog-stereo": { "volume": 1.000000, "mute": false, "volumes": [ 0.399992, 0.399992 ], "channels": [ "FL", "FR" ] },
+  "restore.stream.Audio/Source.node.name:bluez_input.9C_97_89_09_D2_8C.headset-head-unit": { "volume": 1.000000, "mute": false, "volumes": [ 0.400000 ] },
+  "restore.stream.Audio/Sink.node.name:bluez_output.9C_97_89_09_D2_8C.headset-head-unit": { "volume": 1.000000, "mute": false, "volumes": [ 0.342973 ], "channels": [ "MONO" ] },
+  "restore.stream.Audio/Source.node.name:alsa_input.pci-0000_00_1b.0.analog-stereo": { "volume": 1.000000, "mute": false, "volumes": [ 0.399992, 0.399992 ] },
+  "restore.stream.Output/Audio.application.name:mpv": { "volume": 1.000000, "mute": false, "volumes": [ 1.000000, 1.000000 ], "channels": [ "FL", "FR" ] }
+}
