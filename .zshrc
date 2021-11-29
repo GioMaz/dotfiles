@@ -22,5 +22,6 @@ zstyle ':completion:*' menu select
 
 # PATHS
 export EDITOR=nvim
-export OPENER=rifle
-# export PATH=$PATH:$HOME/.local/bin
+export OPENER=exo-open
+export PATH=$PATH:$HOME/.local/bin
+source /usr/share/nvm/init-nvm.sh
