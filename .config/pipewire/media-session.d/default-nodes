@@ -1,4 +1,0 @@
-{
-  "default.configured.audio.source": { "name": "alsa_input.pci-0000_00_1b.0.analog-stereo" },
-  "default.configured.audio.sink": { "name": "bluez_output.9C_97_89_09_D2_8C.a2dp-sink" }
-}
