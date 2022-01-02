@@ -33,11 +33,16 @@ alias ardcomp='arduino-cli compile -b arduino:avr:uno -v'
 alias ardupl='arduino-cli upload -p /dev/ttyACM0 -b arduino:avr:uno'
 
 # shell colors
-alias ls='ls -G'
+OS=$(uname)
+if [[ $OS == 'Darwin' ]]
+then
+  alias ls='ls -G'
+  alias ip='ip --color=auto'
+else
+  alias ls='ls --color=auto'
+fi
 alias l='ls -l'
 alias ll='ls -al'
 alias grep='grep --color=auto'
-alias ip='ip -color=auto'
-
 # directory alias
 alias nv='cd ~/.config/nvim/ && nvim init.vim'
