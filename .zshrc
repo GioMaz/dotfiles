@@ -20,6 +20,9 @@ zstyle ':completion:*' menu select
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/.aliasrc" ] && source "$HOME/.aliasrc"
 
+# Search in history with Ctrl+R
+eval "$(mcfly init zsh)"
+
 # PATHS
 export EDITOR=nvim
 export OPENER=exo-open
