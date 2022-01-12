@@ -33,6 +33,9 @@ alias ardcomp='arduino-cli compile -b arduino:avr:uno -v'
 alias ardupl='arduino-cli upload -p /dev/ttyACM0 -b arduino:avr:uno'
 
 # shell colors
+alias l='ls -l'
+alias ll='ls -al'
+alias grep='grep --color=auto'
 OS=$(uname)
 if [[ $OS == 'Darwin' ]]
 then
@@ -41,8 +44,16 @@ then
 else
   alias ls='ls --color=auto'
 fi
-alias l='ls -l'
-alias ll='ls -al'
-alias grep='grep --color=auto'
+
 # directory alias
 alias nv='cd ~/.config/nvim/ && nvim init.vim'
+
+# homebrew
+alias brewp='brew pin'
+alias brewsp='brew list --pinned'
+alias bubo='brew update && brew outdated'
+alias bubc='brew upgrade && brew cleanup'
+alias bubu='bubo && bubc'
+alias buf='brew upgrade --formula'
+alias bcubo='brew update && brew outdated --cask'
+alias bcubc='brew upgrade --cask && brew cleanup'
