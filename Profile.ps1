@@ -2,11 +2,11 @@
 Set-PSReadLineOption -EditMode Emacs
 Set-PSReadLineOption -BellStyle None
 Set-PSReadLineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
-Set-PSReadLineOption -PredictionSource History
 
 # Aliases
 Set-Alias vim nvim
 Set-Alias vi nvim
+Set-Alias f lf
 
 # Utilities
 function which ($command) {
