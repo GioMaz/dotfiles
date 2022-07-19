@@ -24,6 +24,9 @@ set smartindent
 set lazyredraw
 set ignorecase
 
+nnoremap k gk
+nnoremap j gj
+
 nnoremap <silent><C-h> :wincmd h<CR>
 nnoremap <silent><C-j> :wincmd j<CR>
 nnoremap <silent><C-k> :wincmd k<CR>
