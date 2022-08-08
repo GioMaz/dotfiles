@@ -27,6 +27,6 @@ export EDITOR=nvim
 export OPENER=xdg-open
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=1
-export PATH=$PATH:/opt/homebrew/bin/
+export PATH=$PATH:/opt/homebrew/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.dotnet
