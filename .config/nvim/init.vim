@@ -23,6 +23,7 @@ set autoindent
 set smartindent
 set lazyredraw
 set ignorecase
+set guicursor=i:block
 
 nnoremap k gk
 nnoremap j gj
