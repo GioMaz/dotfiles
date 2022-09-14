@@ -23,8 +23,8 @@ alias gal='sxiv -tbf .'
 alias calc='qalc'
 alias ardcomp='arduino-cli compile -b arduino:avr:uno -v'
 alias ardupl='arduino-cli upload -p /dev/ttyACM0 -b arduino:avr:uno'
-alias vi='nvim'
-alias vim='nvim'
+alias vi=$EDITOR
+alias vim=$EDITOR$EDITOR
 
 # shell colors
 alias l='ls -l'
@@ -40,7 +40,7 @@ else
 fi
 
 # directory alias
-alias nv='cd ~/.config/nvim/ && nvim init.vim'
+alias nv='cd ~/.config/nvim/ && $EDITOR init.vim'
 
 # homebrew
 alias brewp='brew pin'
