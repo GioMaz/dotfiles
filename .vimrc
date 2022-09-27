@@ -19,6 +19,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
+set noswapfile
 
 nnoremap <C-h>  :wincmd h<CR>
 nnoremap <C-j>  :wincmd j<CR>
