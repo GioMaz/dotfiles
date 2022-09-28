@@ -15,7 +15,6 @@ set nohlsearch
 set ruler
 set encoding=UTF-8
 set splitbelow
-set nofixendofline
 set tabstop=4
 set shiftwidth=4
 set expandtab

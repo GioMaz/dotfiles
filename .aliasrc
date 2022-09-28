@@ -40,7 +40,7 @@ else
 fi
 
 # directory alias
-alias nv='cd ~/.config/nvim/ && $EDITOR init.vim'
+alias nv='$EDITOR ~/.config/nvim/init.vim'
 
 # homebrew
 alias brewp='brew pin'
