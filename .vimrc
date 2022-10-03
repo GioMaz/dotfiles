@@ -8,7 +8,6 @@ set linebreak
 set wildmenu
 set expandtab
 set exrc
-set clipboard=unnamedplus
 set backspace=2
 set nohlsearch
 set ruler
@@ -19,6 +18,10 @@ set shiftwidth=4
 set expandtab
 set autoindent
 set noswapfile
+" Linux
+"set clipboard=unnamedplus
+" MacOS
+set clipboard=unnamed
 
 nnoremap <C-h>  :wincmd h<CR>
 nnoremap <C-j>  :wincmd j<CR>
