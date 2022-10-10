@@ -18,6 +18,7 @@ set shiftwidth=4
 set expandtab
 set autoindent
 set noswapfile
+set mouse=nv
 " Linux
 "set clipboard=unnamedplus
 " MacOS
