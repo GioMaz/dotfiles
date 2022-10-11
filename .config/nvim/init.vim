@@ -24,22 +24,22 @@ set lazyredraw
 set ignorecase
 set guicursor=i:block
 
-nnoremap k gk
 nnoremap j gj
+nnoremap k gk
 
 nnoremap <silent><C-h> :wincmd h<CR>
 nnoremap <silent><C-j> :wincmd j<CR>
 nnoremap <silent><C-k> :wincmd k<CR>
 nnoremap <silent><C-l> :wincmd l<CR>
 
-nnoremap <silent><M-k> :resize -2<CR>
-nnoremap <silent><M-j> :resize +2<CR>
 nnoremap <silent><M-h> :vertical resize -2<CR>
+nnoremap <silent><M-j> :resize +2<CR>
+nnoremap <silent><M-k> :resize -2<CR>
 nnoremap <silent><M-l> :vertical resize +2<CR>
 
+nnoremap <silent><C-f> :Explore<CR>
 nnoremap <silent><C-s> :Sex<CR>
 nnoremap <silent><C-c> :Vex<CR>
-nnoremap <silent><C-f> :Explore<CR>
 
 nnoremap <silent><C-b> :bNext<CR>
 
