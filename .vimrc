@@ -19,10 +19,8 @@ set expandtab
 set autoindent
 set noswapfile
 set mouse=nv
-" Linux
-"set clipboard=unnamedplus
-" MacOS
 set clipboard=unnamed
+"set clipboard=unnamedplus
 
 nnoremap <C-h>  :wincmd h<CR>
 nnoremap <C-j>  :wincmd j<CR>
