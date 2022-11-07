@@ -19,6 +19,7 @@ set expandtab
 set autoindent
 set noswapfile
 set mouse=nv
+set nofixendofline
 set clipboard=unnamed
 "set clipboard=unnamedplus
 
