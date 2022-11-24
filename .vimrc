@@ -23,14 +23,14 @@ set nofixendofline
 set clipboard=unnamed
 "set clipboard=unnamedplus
 
-nnoremap <C-h>  :wincmd h<CR>
-nnoremap <C-j>  :wincmd j<CR>
-nnoremap <C-k>  :wincmd k<CR>
-nnoremap <C-l>  :wincmd l<CR>
+nnoremap <C-h> :wincmd h<CR>
+nnoremap <C-j> :wincmd j<CR>
+nnoremap <C-k> :wincmd k<CR>
+nnoremap <C-l> :wincmd l<CR>
 
-nnoremap <C-s>  :Sex<CR>
-nnoremap <C-c>  :Vex<CR>
-nnoremap <C-f>  :Explore<CR>
-nnoremap <C-t>  :terminal<CR>
+nnoremap <C-s> :Sex<CR>
+nnoremap <C-c> :Vex<CR>
+nnoremap <C-f> :Explore<CR>
+nnoremap <C-t> :terminal<CR>
 
 map Q <Nop>
