@@ -23,8 +23,8 @@ alias gal='sxiv -tbf .'
 alias calc='qalc'
 alias ardcomp='arduino-cli compile -b arduino:avr:uno -v'
 alias ardupl='arduino-cli upload -p /dev/ttyACM0 -b arduino:avr:uno'
-alias vi=$EDITOR
-alias vim=$EDITOR
+alias vi='$EDITOR'
+alias vim='$EDITOR'
 
 # shell colors
 alias l='ls -l'
