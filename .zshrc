@@ -23,7 +23,7 @@ zstyle ':completion:*' menu select
 [ -f "$HOME/.aliasrc" ] && source "$HOME/.aliasrc"
 
 # PATHS
-export EDITOR=nvim
+export EDITOR=vim
 export OPENER=xdg-open
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=1
