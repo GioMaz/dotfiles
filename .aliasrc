@@ -1,45 +1,11 @@
-# git
-alias gitu='git add . && git commit && git push'
-
-# coronavirus information
-alias corona='covid'
-alias coronavirus='covid'
-alias co='covid'
-
-# system programs
-alias bat='pmset -g batt | grep % | sed -e "s/.*)\(.*\)%.*/\1/" | xargs'
-alias batt='pmset -g batt | grep % | sed -e "s/.*)\(.*\)%.*/\1/" | xargs'
-alias server='ifconfig | grep 192.168.1. && python3 -m http.server 1234'
-alias vpn='sudo openvpn /Users/giovanni/VPN/giovanni.ovpn'
-alias speed='speedtest'
-alias yt='ytfzf -t '
-alias q='exit'
-alias e='exit'
-alias mem='df -h'
-alias disk='df -h /dev/sdb1'
-alias f='lf'
-alias tempo='curl wttr.in'
-alias gal='sxiv -tbf .'
-alias calc='qalc'
-alias ardcomp='arduino-cli compile -b arduino:avr:uno -v'
-alias ardupl='arduino-cli upload -p /dev/ttyACM0 -b arduino:avr:uno'
+# editor
 alias vi='$EDITOR'
 alias vim='$EDITOR'
-
-# shell colors
-if [[ $(uname) == 'Darwin' ]]
-then
-  alias ls='ls -G'
-  alias ip='ip --color=auto'
-else
-  alias ls='ls --color=auto'
-fi
-alias l='ls -l'
-alias ll='ls -al'
-alias grep='grep --color=auto'
-
-# directory alias
+alias nvim='$EDITOR'
 alias nv='$EDITOR ~/.config/nvim/init.vim'
+
+# git
+alias gitu='git add . && git commit && git push'
 
 # homebrew
 alias brewp='brew pin'
@@ -53,3 +19,30 @@ alias bcubc='brew upgrade --cask && brew cleanup'
 
 # pacman
 alias autoremove='sudo pacman -Qdtq | sudo pacman -Rs -'
+
+# arcuino-cli
+alias ardcomp='arduino-cli compile -b arduino:avr:uno -v'
+alias ardupl='arduino-cli upload -p /dev/ttyACM0 -b arduino:avr:uno'
+
+# system programs
+alias bat='pmset -g batt | grep % | sed -e "s/.*)\(.*\)%.*/\1/" | xargs'
+alias batt='pmset -g batt | grep % | sed -e "s/.*)\(.*\)%.*/\1/" | xargs'
+alias shdir='ifconfig | grep 192.168.1. && python3 -m http.server 1234'
+alias vpn='sudo openvpn /Users/giovanni/VPN/giovanni.ovpn'
+alias speed='speedtest'
+alias q='exit'
+alias e='exit'
+alias f='lf'
+alias meteo='curl wttr.in'
+
+# shell colors
+if [[ $(uname) == 'Darwin' ]]
+then
+  alias ls='ls -G'
+else
+  alias ls='ls --color=auto'
+  alias ip='ip --color=auto'
+fi
+alias l='ls -l'
+alias ll='ls -al'
+alias grep='grep --color=auto'
