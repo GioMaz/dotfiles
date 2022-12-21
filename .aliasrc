@@ -27,17 +27,16 @@ alias vi='$EDITOR'
 alias vim='$EDITOR'
 
 # shell colors
-alias l='ls -l'
-alias ll='ls -al'
-alias grep='grep --color=auto'
-OS=$(uname)
-if [[ $OS == 'Darwin' ]]
+if [[ $(uname) == 'Darwin' ]]
 then
   alias ls='ls -G'
   alias ip='ip --color=auto'
 else
   alias ls='ls --color=auto'
 fi
+alias l='ls -l'
+alias ll='ls -al'
+alias grep='grep --color=auto'
 
 # directory alias
 alias nv='$EDITOR ~/.config/nvim/init.vim'
