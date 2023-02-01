@@ -1,7 +1,6 @@
 # editor
 alias vi='$EDITOR'
 alias vim='$EDITOR'
-alias nvim='$EDITOR'
 alias nv='$EDITOR ~/.vimrc'
 #alias nv='$EDITOR ~/.config/nvim/init.vim'
 
