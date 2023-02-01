@@ -2,16 +2,16 @@ syntax on
 set number
 set relativenumber
 set errorbells
-set incsearch
 set nowrap
 set linebreak
 set wildmenu
 set expandtab
 set exrc
 set backspace=2
+set incsearch
 set nohlsearch
 set ruler
-set encoding=UTF-8
+set encoding=utf-8
 set splitbelow
 set tabstop=4
 set shiftwidth=4
@@ -30,7 +30,7 @@ nnoremap <C-l> :wincmd l<CR>
 
 nnoremap <C-s> :Sex<CR>
 nnoremap <C-c> :Vex<CR>
-nnoremap <C-f> :Explore<CR>
+nnoremap <C-f> :Ex<CR>
 nnoremap <C-t> :terminal<CR>
 
 map Q <Nop>
