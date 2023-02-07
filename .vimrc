@@ -23,6 +23,8 @@ set nofixendofline
 set clipboard=unnamed
 "set clipboard=unnamedplus
 
+let g:netrw_sort_by = "name"
+
 nnoremap <C-h> :wincmd h<CR>
 nnoremap <C-j> :wincmd j<CR>
 nnoremap <C-k> :wincmd k<CR>
