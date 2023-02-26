@@ -2,30 +2,38 @@ syntax on
 set number
 set relativenumber
 set errorbells
-set incsearch
-set scrollback=300
 set nowrap
 set linebreak
 set wildmenu
 set expandtab
 set exrc
-set clipboard=unnamedplus
 set backspace=2
 set nohlsearch
+set incsearch
+set ignorecase
 set ruler
-set encoding=UTF-8
 set splitbelow
+set softtabstop=4
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set autoindent
 set smartindent
+set autoindent
 set lazyredraw
-set ignorecase
+set clipboard=unnamedplus
 set guicursor=i:block
+set scrollback=300
 
 nnoremap j gj
 nnoremap k gk
+
+nnoremap <C-u> <C-u>zz
+nnoremap <C-d> <C-d>zz
+
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
+xnoremap p "_dP
 
 nnoremap <silent><C-h> :wincmd h<CR>
 nnoremap <silent><C-j> :wincmd j<CR>
