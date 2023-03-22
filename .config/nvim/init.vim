@@ -62,3 +62,9 @@ augroup YankHighlight
   autocmd!
   autocmd TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=700}
 augroup end
+
+set background=dark
+if has("termguicolors")
+  set termguicolors
+  colorscheme gruvbox
+endif
