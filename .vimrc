@@ -25,6 +25,17 @@ set clipboard=unnamed
 
 let g:netrw_sort_by = "name"
 
+nnoremap j gj
+nnoremap k gk
+
+nnoremap <C-u> <C-u>zz
+nnoremap <C-d> <C-d>zz
+
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
+xnoremap p "_dP
+
 nnoremap <C-h> :wincmd h<CR>
 nnoremap <C-j> :wincmd j<CR>
 nnoremap <C-k> :wincmd k<CR>
