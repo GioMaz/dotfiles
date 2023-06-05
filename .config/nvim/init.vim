@@ -56,6 +56,8 @@ tnoremap <silent><Esc> <C-\><C-n>
 
 map Q <Nop>
 
+let g:netrw_sort_sequence = ''
+
 autocmd TermOpen * setlocal listchars = nonumber norelativenumber
 
 augroup YankHighlight
