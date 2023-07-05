@@ -1,8 +1,12 @@
 # editor
 alias vi='$EDITOR'
 alias vim='$EDITOR'
-#alias nv='$EDITOR ~/.vimrc'
+#alias nv='~/.vimrc'
 alias nv='$EDITOR ~/.config/nvim/init.vim'
+
+# sml
+alias sml='rlwrap sml'
+alias poly='rlwrap poly'
 
 # git
 alias gitu='git add . && git commit && git push'
