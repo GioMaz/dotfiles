@@ -11,3 +11,4 @@ Set-Alias vim nvim
 Set-Alias vi nvim
 Set-Alias f lf
 Set-Alias open explorer.exe
+iex "function $("q") { exit }"
