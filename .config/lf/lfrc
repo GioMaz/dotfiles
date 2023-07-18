@@ -27,9 +27,7 @@ map <enter> shell
 map x $$f
 map X !$f
 
-#--------------------------
-# Mine
-#--------------------------
+# my mappings
 map <backspace2>    set hidden!
 map b               $vimv
 map <esc>           top
