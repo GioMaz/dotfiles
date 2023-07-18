@@ -1,9 +1,3 @@
-# my mappings
-map <backspace> set hidden!
-map <esc> top
-map <c-e> up
-map <c-y> down
-
 # interpreter for shell commands
 set shell "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
 
@@ -18,6 +12,12 @@ set shell "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
 
 # change the default open command to work in powerShell
 cmd open &start $Env:f
+
+# my mappings
+map <backspace> set hidden!
+map <esc> top
+map <c-e> up
+map <c-y> down
 
 # change the editor used in default editor keybinding
 # There is no builtin terminal editor installed in Windows. The default editor
