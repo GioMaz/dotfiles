@@ -24,8 +24,8 @@ set clipboard=unnamedplus
 set guicursor=i:block
 set scrollback=300
 
-nnoremap j gj
-nnoremap k gk
+noremap j gj
+noremap k gk
 
 nnoremap <C-u> <C-u>zz
 nnoremap <C-d> <C-d>zz
