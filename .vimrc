@@ -8,22 +8,20 @@ set wildmenu
 set expandtab
 set exrc
 set backspace=2
-set incsearch
 set nohlsearch
+set incsearch
+set ignorecase
 set ruler
-set encoding=utf-8
 set splitbelow
+set softtabstop=4
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set smartindent
 set autoindent
-set noswapfile
-set mouse=nv
-set nofixendofline
+set lazyredraw
 set clipboard=unnamed
-"set clipboard=unnamedplus
-
-let g:netrw_sort_by = "name"
+set mouse=nv
 
 noremap j gj
 noremap k gk
@@ -41,9 +39,12 @@ nnoremap <C-j> :wincmd j<CR>
 nnoremap <C-k> :wincmd k<CR>
 nnoremap <C-l> :wincmd l<CR>
 
+nnoremap <C-f> :Explore<CR>
 nnoremap <C-s> :Sex<CR>
 nnoremap <C-c> :Vex<CR>
-nnoremap <C-f> :Ex<CR>
+
 nnoremap <C-t> :terminal<CR>
 
 map Q <Nop>
+
+let g:netrw_sort_by = "name"
