@@ -15,6 +15,7 @@ general {
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery all"
+order += "volume master"
 # order += "disk /"
 # order += "load"
 # order += "memory"
@@ -29,6 +30,11 @@ wireless _first_ {
 ethernet _first_ {
         format_up = "e: (%speed)"
         format_down = "e: down"
+}
+
+volume master {
+        format = "%volume"
+        format_muted = "muted (%volume)"
 }
 
 battery all {

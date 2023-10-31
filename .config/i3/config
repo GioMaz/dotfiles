@@ -1,7 +1,7 @@
 # i3 config file (v4)
 
 set $mod Mod4
-set $term gnome-terminal
+set $term alacritty
 
 font pango:monospace 8
 
