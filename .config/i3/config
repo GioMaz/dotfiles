@@ -1,7 +1,7 @@
 # i3 config file (v4)
 
 set $mod Mod4
-set $term alacritty
+set $term gnome-terminal
 
 font pango:monospace 8
 
@@ -54,9 +54,9 @@ bindsym $mod+y split v;exec --no-startup-id notify-send 'tile vertically'
 bindsym $mod+t split toggle
 
 # change layout
-bindsym Mod1+1 layout stacking
-bindsym Mod1+2 layout tabbed
-bindsym Mod1+3 layout toggle split
+bindsym $mod+Ctrl+1 layout stacking
+bindsym $mod+Ctrl+2 layout tabbed
+bindsym $mod+Ctrl+3 layout toggle split
 
 # toggle floating
 bindsym $mod+Shift+space floating toggle
