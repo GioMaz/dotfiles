@@ -30,3 +30,4 @@ export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=1
 export PATH=$PATH:/opt/homebrew/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.dotnet
+export HOMEBREW_TEMP=/tmp
