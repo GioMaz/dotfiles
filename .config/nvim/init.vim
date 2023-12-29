@@ -1,8 +1,8 @@
 syntax on
 set number
-set relativenumber
+set norelativenumber
 set errorbells
-set nowrap
+set wrap
 set linebreak
 set wildmenu
 set expandtab
@@ -34,6 +34,11 @@ vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
 xnoremap p "_dP
+
+nnoremap <silent>mm :make<CR>
+nnoremap <silent>mr :make run<CR>
+nnoremap <silent>mb :make build<CR>
+nnoremap <silent>mi :make install<CR>
 
 nnoremap <silent><C-h> :wincmd h<CR>
 nnoremap <silent><C-j> :wincmd j<CR>
