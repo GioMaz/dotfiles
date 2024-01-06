@@ -19,7 +19,7 @@ set shiftwidth=4
 set expandtab
 set smartindent
 set autoindent
-set lazyredraw
+set nolazyredraw
 set clipboard=unnamedplus
 set guicursor=i:block
 set scrollback=300
