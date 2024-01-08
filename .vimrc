@@ -19,7 +19,7 @@ set shiftwidth=4
 set expandtab
 set smartindent
 set autoindent
-set nolazyredraw
+set lazyredraw
 set clipboard=unnamed
 set mouse=nv
 
