@@ -1,7 +1,7 @@
 # i3 config file (v4)
 
 set $mod Mod4
-set $term alacritty
+set $term urxvt
 
 font pango:monospace 8
 
@@ -125,3 +125,4 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id xset s 300
+exec --no-startup-id xset r rate 300 30

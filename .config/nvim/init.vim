@@ -1,5 +1,5 @@
 syntax on
-set number
+set nonumber
 set norelativenumber
 set errorbells
 set wrap
