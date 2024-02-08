@@ -21,7 +21,7 @@ set smartindent
 set autoindent
 set lazyredraw
 set clipboard=unnamed
-set mouse=nv
+"set mouse=nv
 
 noremap j gj
 noremap k gk
