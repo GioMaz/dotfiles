@@ -1,6 +1,6 @@
 syntax on
-set nonumber
-set norelativenumber
+"set number
+"set relativenumber
 set errorbells
 set wrap
 set linebreak
@@ -8,9 +8,9 @@ set wildmenu
 set expandtab
 set exrc
 set backspace=2
-set nohlsearch
+"set hlsearch
 set incsearch
-set ignorecase
+"set ignorecase
 set ruler
 set splitbelow
 set softtabstop=4
@@ -19,7 +19,7 @@ set shiftwidth=4
 set expandtab
 set smartindent
 set autoindent
-set nolazyredraw
+"set lazyredraw
 set clipboard=unnamedplus
 set guicursor=i:block
 set scrollback=300
