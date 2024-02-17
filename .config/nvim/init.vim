@@ -8,7 +8,7 @@ set wildmenu
 set expandtab
 set exrc
 set backspace=2
-"set hlsearch
+set nohlsearch
 set incsearch
 "set ignorecase
 set ruler
