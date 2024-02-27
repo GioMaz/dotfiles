@@ -59,6 +59,8 @@ nnoremap <silent><C-b> :bNext<CR>
 nnoremap <silent><C-t> :split \| terminal<CR>
 tnoremap <silent><Esc> <C-\><C-n>
 
+noremap mc :!make clean<CR>
+
 map Q <Nop>
 
 let g:netrw_sort_sequence = ''
