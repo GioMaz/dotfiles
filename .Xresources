@@ -1,11 +1,11 @@
 ! ~/.Xresources
 
 !! URXVT APPEARANCE
- URxvt.font: xft:monospace:pixelsize=16:antialias=true:autohint=true;
-URxvt.letterSpace: -1
-URxvt.scrollBar: false
-URxvt.saveLines: 65535
-URxvt.iso14755: false
+*.font: xft:monospace:pixelsize=16:antialias=true:autohint=true;
+*.letterSpace: -1
+*.scrollBar: false
+*.saveLines: 65535
+*.iso14755: false
 
 ! PLUGINS
 URxvt.perl-lib: /usr/lib/urxvt/perl/
