@@ -1,15 +1,16 @@
 ! ~/.Xresources
 
-!! URXVT APPEARANCE
- URxvt.font: xft:monospace:pixelsize=16:antialias=true:autohint=true;
-URxvt.letterSpace: -1
-URxvt.scrollBar: false
-URxvt.saveLines: 65535
-URxvt.iso14755: false
+! URXVT APPEARANCE
+!*.font: xft:monospace:pixelsize=16:antialias=true:autohint=true;
+*.font: xft:Hack:pixelsize=16:antialias=true:autohint=true;
+*.letterSpace: -1
+*.scrollBar: false
+*.saveLines: 65535
+*.iso14755: false
 
 ! PLUGINS
 URxvt.perl-lib: /usr/lib/urxvt/perl/
-! ! search for font-size, keyboard-select... on github
+! search for font-size, keyboard-select... on github
 URxvt.perl-ext-common: font-size,eval,keyboard-select
 
 ! font-size
