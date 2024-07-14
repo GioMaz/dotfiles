@@ -9,8 +9,8 @@ bindkey -e
 
 # History in cache directory:
 HISTFILE=~/.zsh_history
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 
 # Enable completion for capitalization errors:
 autoload -Uz compinit; compinit
