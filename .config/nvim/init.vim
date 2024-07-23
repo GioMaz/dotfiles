@@ -10,7 +10,8 @@ set exrc
 set backspace=2
 set nohlsearch
 set incsearch
-"set ignorecase
+set ignorecase
+set smartcase
 set ruler
 set splitbelow
 set softtabstop=4
