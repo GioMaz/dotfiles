@@ -48,5 +48,5 @@ else
   alias ip='ip --color=auto'
 fi
 alias l='ls -l'
-alias ll='ls -al'
+alias ll='ls -alh'
 alias grep='grep --color=auto'

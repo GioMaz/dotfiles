@@ -1,7 +1,7 @@
 set $mod Mod4
 set $term i3-sensible-terminal
 
-font pango:monospace 8
+font pango:monospace 10
 #font pango:DejaVu Sans Mono 8
 
 # audio
@@ -123,6 +123,6 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id xset r rate 250 30
-exec --no-startup-id feh --bg-fill /usr/share/images/desktop-base/desktop-background
+#exec --no-startup-id feh --bg-fill /usr/share/images/desktop-base/desktop-background
 #exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
