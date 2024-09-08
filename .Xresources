@@ -1,8 +1,7 @@
 ! ~/.Xresources
 
 ! URXVT APPEARANCE
-!*.font: xft:monospace:pixelsize=16:antialias=true:autohint=true;
-*.font: xft:Hack:pixelsize=16:antialias=true:autohint=true;
+*.font: xft:monospace:pixelsize=16:antialias=true:autohint=true;
 *.letterSpace: -1
 *.scrollBar: false
 *.saveLines: 65535
