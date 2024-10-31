@@ -39,6 +39,7 @@ xnoremap p "_dP
 nnoremap <silent>mm :make<CR>
 nnoremap <silent>mr :make run<CR>
 nnoremap <silent>mb :make build<CR>
+nnoremap <silent>mc :make clean<CR>
 nnoremap <silent>mi :make install<CR>
 
 nnoremap <silent><C-h> :wincmd h<CR>
@@ -60,7 +61,6 @@ nnoremap <silent><C-b> :bNext<CR>
 nnoremap <silent><C-t> :split \| terminal<CR>
 tnoremap <silent><Esc> <C-\><C-n>
 
-noremap mc :!make clean<CR>
 
 map Q <Nop>
 
