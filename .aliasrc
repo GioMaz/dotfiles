@@ -4,6 +4,9 @@ alias vim='$EDITOR'
 #alias nv='~/.vimrc'
 alias nv='$EDITOR ~/.config/nvim/init.vim'
 
+# coq
+alias coqtop='rlwrap coqtop'
+
 # sml
 alias sml='rlwrap sml'
 alias poly='rlwrap poly'
