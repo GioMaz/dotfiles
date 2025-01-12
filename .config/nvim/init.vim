@@ -60,7 +60,9 @@ nnoremap <silent><C-b> :bNext<CR>
 nnoremap <silent><C-t> :split \| terminal<CR>
 tnoremap <silent><Esc> <C-\><C-n>
 
-noremap mc :!make clean<CR>
+nnoremap mc :!make clean<CR>
+
+nnoremap ml :!pdflatex -interaction=nonstopmode %:p<CR>
 
 map Q <Nop>
 
@@ -72,3 +74,4 @@ augroup YankHighlight
   autocmd!
   autocmd TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=700}
 augroup end
+

@@ -31,3 +31,4 @@ export PATH=$PATH:/opt/homebrew/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.dotnet
 export HOMEBREW_TEMP=/tmp
+. "$HOME/.cargo/env"
