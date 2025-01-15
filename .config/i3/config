@@ -74,9 +74,9 @@ bindsym $mod+y split v
 bindsym $mod+t split toggle
 
 # change layout
-bindsym $mod+Ctrl+1 layout stacking
+bindsym $mod+Ctrl+1 layout toggle split
 bindsym $mod+Ctrl+2 layout tabbed
-bindsym $mod+Ctrl+3 layout toggle split
+bindsym $mod+Ctrl+3 layout stacking
 
 # toggle floating
 bindsym $mod+Shift+space floating toggle
