@@ -1,8 +1,11 @@
 set $mod Mod4
-set $term kitty
+set $term alacritty
 
 font pango:monospace 10
 #font pango:DejaVu Sans Mono 8
+
+# default layout
+workspace_layout tabbed
 
 # applications
 bindsym $mod+Return exec $term
@@ -23,6 +26,10 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
 bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
 bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
+
+# floating windows
+for_window [class="Thunar"] floating enable
+for_window [class="feh"] floating enable
 
 # drag windows
 floating_modifier $mod
