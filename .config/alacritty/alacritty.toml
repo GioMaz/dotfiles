@@ -1,5 +1,9 @@
 [keyboard]
-bindings = [ { key = "N", mods = "Control", command = { program = "bash", args = ["-c", "alacritty"] } }, ]
+bindings = [
+    { key = "T", mods = "Control|Shift", command = { program = "bash", args = ["-c", "alacritty"] } },
+    { key = "U", mods = "Control|Shift", action = "ScrollToTop" },
+    { key = "D", mods = "Control|Shift", action = "ScrollToBottom" },
+]
 
 [font]
 normal = { family = "Hack", style = "Regular" }
@@ -7,3 +11,6 @@ bold = { family = "Hack", style = "Bold" }
 italic = { family = "Hack", style = "Italic" }
 bold_italic = { family = "Hack", style = "Bold Italic" }
 size = 9.0
+
+[window]
+startup_mode = "Maximized"

@@ -38,6 +38,9 @@ tiling_drag modifier titlebar
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# disable focus wrapping
+focus_wrapping no
+
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
