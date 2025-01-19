@@ -30,6 +30,9 @@ bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(d
 # floating windows
 for_window [class="Thunar"] floating enable
 for_window [class="feh"] floating enable
+for_window [class="Xfce4-appfinder"] floating enable
+for_window [class="Pavucontrol"] floating enable
+for_window [class="Blueman-manager"] floating enable
 
 # drag windows
 floating_modifier $mod
@@ -44,6 +47,7 @@ focus_wrapping no
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
+bindsym Mod1+space exec xfce4-appfinder
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
