@@ -23,7 +23,7 @@ set autoindent
 "set lazyredraw
 set clipboard=unnamedplus
 set guicursor=i:block
-set scrollback=300
+set scrollback=1000
 
 noremap j gj
 noremap k gk
