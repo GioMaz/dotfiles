@@ -70,7 +70,7 @@ let g:netrw_sort_sequence = ''
 autocmd TermOpen * setlocal listchars = nonumber norelativenumber
 
 augroup YankHighlight
-  autocmd!
-  autocmd TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=700}
+    autocmd!
+    autocmd TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=700}
 augroup end
 
