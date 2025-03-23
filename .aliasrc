@@ -7,6 +7,13 @@ alias nv='$EDITOR ~/.config/nvim/init.vim'
 # coq
 alias coqtop='rlwrap coqtop'
 
+# idf
+alias idf_init='/opt/esp-idf/export.sh'
+
+# ocaml
+alias ocaml='rlwrap ocaml'
+alias opam_init='[[ ! -r /home/giovanni/.opam/opam-init/init.zsh ]] || source /home/giovanni/.opam/opam-init/init.zsh > /dev/null 2> /dev/null'
+
 # sml
 alias sml='rlwrap sml'
 alias poly='rlwrap poly'
