@@ -8,15 +8,21 @@ alias nv='$EDITOR ~/.config/nvim/init.vim'
 alias coqtop='rlwrap coqtop'
 
 # idf
-alias idf_init='/opt/esp-idf/export.sh'
+alias idfinit='. /opt/esp-idf/export.sh'
+alias idfrun='idfinit && idf.py build && idf.py flash && idf.py monitor'
 
 # ocaml
 alias ocaml='rlwrap ocaml'
-alias opam_init='[[ ! -r /home/giovanni/.opam/opam-init/init.zsh ]] || source /home/giovanni/.opam/opam-init/init.zsh > /dev/null 2> /dev/null'
+alias opaminit='[[ ! -r /home/giovanni/.opam/opam-init/init.zsh ]] || source /home/giovanni/.opam/opam-init/init.zsh > /dev/null 2> /dev/null'
 
 # sml
 alias sml='rlwrap sml'
 alias poly='rlwrap poly'
+
+# python3 modules
+alias venv='python3 -m venv'
+alias venvinit='python3 -m venv .venv'
+alias venvactivate='source .venv/bin/activate'
 
 # git
 alias gitu='git add . && git commit && git push'
