@@ -39,7 +39,7 @@ export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=1
 
 # Environments (prefer aliases over environment scripts)
 . "$HOME/.cargo/env"
-opaminit
+# opaminit
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

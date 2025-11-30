@@ -7,9 +7,16 @@ alias nv='$EDITOR ~/.config/nvim/init.vim'
 # coq
 alias coqtop='rlwrap coqtop'
 
+# fil-c
+alias filc='/opt/filc-0.674-linux-x86_64/build/bin/clang'
+alias filc++='/opt/filc-0.674-linux-x86_64/build/bin/clang++'
+
 # idf
 alias idfinit='. /opt/esp-idf/export.sh'
 alias idfrun='idfinit && idf.py build && idf.py flash && idf.py monitor'
+
+# typst
+alias typst='/opt/typst-x86_64-unknown-linux-musl/typst'
 
 # ocaml
 alias ocaml='rlwrap ocaml'
