@@ -27,6 +27,8 @@ export PATH=$PATH:/opt/homebrew/bin
 export PATH=$PATH:/opt/nvim-linux-x86_64/bin
 export PATH=$PATH:/opt/jflap/bin
 export PATH=$PATH:/opt/c3
+export PATH=$PATH:/opt/mathsat-5.6.15-linux-x86_64/bin
+export PATH=$PATH:/opt/optimathsat-1.7.4-linux-64-bit/bin
 
 # Other variables
 export EDITOR=nvim
