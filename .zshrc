@@ -22,25 +22,21 @@ zstyle ':completion:*' menu select
 [ -f "$HOME/.aliasrc" ] && source "$HOME/.aliasrc"
 
 # PATH variable
-export PATH=$PATH:/opt/homebrew/bin
 export PATH=$PATH:$HOME/.local/bin
-export PATH=$PATH:$HOME/.dotnet
-export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
-export PATH="$PATH:/opt/jflap/bin"
-export PATH="$PATH:/opt/Espressif-IDE-3.5.0-linux.gtk.x86_64/Espressif-IDE"
+export PATH=$PATH:/opt/homebrew/bin
+export PATH=$PATH:/opt/nvim-linux-x86_64/bin
+export PATH=$PATH:/opt/jflap/bin
+export PATH=$PATH:/opt/c3
 
 # Other variables
-# export IDF_PATH=$HOME/.espressif
-export HOMEBREW_TEMP=/tmp
 export EDITOR=nvim
 export OPENER=xdg-open
+export HOMEBREW_TEMP=/tmp
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=1
+# export IDF_PATH=$HOME/.espressif
 
 # Environments (prefer aliases over environment scripts)
-. "$HOME/.cargo/env"
+# cargoinit
 # opaminit
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# nvminit

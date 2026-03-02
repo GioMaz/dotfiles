@@ -4,8 +4,11 @@ alias vim='$EDITOR'
 #alias nv='~/.vimrc'
 alias nv='$EDITOR ~/.config/nvim/init.vim'
 
-# coq
+# rlwraps
 alias coqtop='rlwrap coqtop'
+alias sml='rlwrap sml'
+alias poly='rlwrap poly'
+alias ocaml='rlwrap ocaml'
 
 # fil-c
 alias filc='/opt/filc-0.674-linux-x86_64/build/bin/clang'
@@ -15,18 +18,12 @@ alias filc++='/opt/filc-0.674-linux-x86_64/build/bin/clang++'
 alias idfinit='. /opt/esp-idf/export.sh'
 alias idfrun='idfinit && idf.py build && idf.py flash && idf.py monitor'
 
-# typst
-alias typst='/opt/typst-x86_64-unknown-linux-musl/typst'
-
-# ocaml
-alias ocaml='rlwrap ocaml'
+# environments
+alias cargoinit='. $HOME/.cargo/env'
 alias opaminit='[[ ! -r /home/giovanni/.opam/opam-init/init.zsh ]] || source /home/giovanni/.opam/opam-init/init.zsh > /dev/null 2> /dev/null'
+alias nvminit='[ -s "$HOME/.nvm/nvm.sh" ] && \. "$HOME/.nvm/nvm.sh" && [ -s "$HOME/.nvm/bash_completion" ] && \. "$HOME/.nvm/bash_completion"'
 
-# sml
-alias sml='rlwrap sml'
-alias poly='rlwrap poly'
-
-# python3 modules
+# python3 venv
 alias venv='python3 -m venv'
 alias venvinit='python3 -m venv .venv'
 alias venvactivate='source .venv/bin/activate'
@@ -52,17 +49,12 @@ alias ardcomp='arduino-cli compile -b arduino:avr:uno -v'
 alias ardupl='arduino-cli upload -p /dev/ttyACM0 -b arduino:avr:uno'
 
 # system programs
-alias bat='pmset -g batt | grep % | sed -e "s/.*)\(.*\)%.*/\1/" | xargs'
-alias batt='pmset -g batt | grep % | sed -e "s/.*)\(.*\)%.*/\1/" | xargs'
-alias shdir='ifconfig | grep 192.168.1. && python3 -m http.server 1234'
-alias vpn='sudo openvpn /Users/giovanni/VPN/giovanni.ovpn'
 alias speed='speedtest'
 alias q='exit'
 alias e='exit'
 alias f='lf'
-alias meteo='curl wttr.in'
 
-# shell colors
+# colored commands
 if [[ $(uname) == 'Darwin' ]]
 then
   alias ls='ls -G'
