@@ -1,12 +1,9 @@
-vim.opt.number = true
-vim.opt.relativenumber = false
-vim.opt.signcolumn = "yes"
--- vim.opt.errorbells = false
-vim.opt.wrap = false
-vim.opt.linebreak = true
--- vim.opt.wildmenu = true
--- vim.opt.exrc = true
--- vim.opt.backspace = { 'start', 'eol', 'indent' }
+-- /---------+
+-- | NUMBERS |
+-- +---------/
+vim.opt.number          = true
+vim.opt.relativenumber  = false
+vim.opt.signcolumn      = "yes"
 
 -- /--------+
 -- | SEARCH |
@@ -24,10 +21,7 @@ vim.opt.tabstop     = 4     -- Set "\t" size to 4 columns
 vim.opt.shiftwidth  = 4     -- >> and << indent by 4 columns
 vim.opt.expandtab   = true  -- Use "    " instead of "\t"
 vim.opt.autoindent  = true  -- Keep indentation after "\n" (default on)
-
--- vim.opt.ruler = true
--- vim.opt.splitbelow = true
--- vim.opt.smartindent = true
+vim.opt.smartindent = true  -- Use
 -- vim.opt.lazyredraw = true
 
 -- /------------+
@@ -40,10 +34,19 @@ vim.opt.completeopt = {
     'fuzzy',    -- Fuzzy matching
 }
 
+-- /----------+
+-- | TERMINAL |
+-- +----------/
+vim.opt.splitbelow      = true  -- Push terminal below
+vim.opt.termguicolors   = true  -- Show more colors
+vim.opt.scrollback      = 300   -- Set terminal size
+
 -- /------+
 -- | MISC |
 -- +------/
-vim.opt.clipboard = "unnamedplus"
-vim.opt.guicursor = "i:block"
--- vim.opt.scrollback = 300
--- vim.opt.termguicolors = true
+vim.opt.clipboard   = "unnamedplus"
+vim.opt.guicursor   = "i:block"
+vim.opt.exrc        = true
+vim.opt.wrap        = false
+vim.opt.linebreak   = true
+-- vim.opt.backspace = { 'start', 'eol', 'indent' }
