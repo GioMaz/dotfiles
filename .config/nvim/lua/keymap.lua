@@ -56,7 +56,16 @@ vim.keymap.set('n', 'Q', '<Nop')
 -- /------------+
 -- | COMPLETION |
 -- +------------/
-vim.keymap.set('i', '<C-n>', vim.lsp.completion.get) -- Press <C-n> to open completion
+vim.keymap.set('i', '<C-n>', vim.lsp.completion.get)    -- Press <C-n> to open completion
+vim.keymap.set('n', 'gj', vim.diagnostic.open_float)    -- Show diagnostic dialog (must be called after setting 'j' to 'gj')
+vim.keymap.set('n', 'gk', vim.lsp.buf.hover)            -- Show hover dialog (must be call after setting 'k' to 'gk')
+vim.keymap.set('n', 'gd', vim.lsp.buf.definition)       -- Go to definition
+vim.keymap.set('n', 'gD', vim.lsp.buf.declaration)      -- Go to declaration
+vim.keymap.set('n', 'gp', vim.diagnostic.goto_prev)     -- Go to prev diagnostic
+vim.keymap.set('n', 'gn', vim.diagnostic.goto_next)     -- Go to next diagnostic
+vim.keymap.set('n', 'ga', vim.lsp.buf.code_action)      -- Perform code action
+vim.keymap.set('n', 'grn', vim.lsp.buf.rename)          -- Rename symbol (default)
+vim.keymap.set('n', 'grr', vim.lsp.buf.references)      -- List references (default)
 
 -- Press <Tab> to select completion
 vim.keymap.set('i', '<Tab>', function()
