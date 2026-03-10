@@ -12,13 +12,13 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
-# Enable completion for capitalization errors:
+# Enable completion for capitalization errors
 autoload -Uz compinit; compinit
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 zstyle ':completion:*' menu select
 
-# Load aliases and shortcuts if existent.
+# Load aliases and shortcuts if existent
 [ -f "$HOME/.aliasrc" ] && source "$HOME/.aliasrc"
 
 # PATH variable
