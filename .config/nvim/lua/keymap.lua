@@ -1,16 +1,15 @@
--- Move on the same wrapped line
+-- /---------+
+-- | EDITING |
+-- +---------/
 vim.keymap.set('n', 'j', 'gj')
 vim.keymap.set('n', 'k', 'gk')
 
--- Move selected lines above/below
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 
--- Move selected lines above/below
 vim.keymap.set('v', 'J', ':m \'>+1<CR>gv=gv')
 vim.keymap.set('v', 'K', ':m \'<-2<CR>gv=gv')
 
--- Avoid yanking when pasting over a line
 vim.keymap.set('x', 'p', '"_dP')
 
 -- /--------+
@@ -51,14 +50,14 @@ vim.keymap.set('n', 'mc', ':make clean<CR>')
 -- /------+
 -- | MISC |
 -- +------/
-vim.keymap.set('n', 'Q', '<Nop')
+vim.keymap.set('n', 'Q', '<Nop>')
 
--- /------------+
--- | COMPLETION |
--- +------------/
+-- /-----+
+-- | LSP |
+-- +-----/
 vim.keymap.set('i', '<C-n>', vim.lsp.completion.get)    -- Press <C-n> to open completion
 vim.keymap.set('n', 'gj', vim.diagnostic.open_float)    -- Show diagnostic dialog (must be called after setting 'j' to 'gj')
-vim.keymap.set('n', 'gk', vim.lsp.buf.hover)            -- Show hover dialog (must be call after setting 'k' to 'gk')
+vim.keymap.set('n', 'gk', vim.lsp.buf.hover)            -- Show hover dialog (must be called after setting 'k' to 'gk')
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition)       -- Go to definition
 vim.keymap.set('n', 'gD', vim.lsp.buf.declaration)      -- Go to declaration
 vim.keymap.set('n', 'gp', vim.diagnostic.goto_prev)     -- Go to prev diagnostic
@@ -67,6 +66,9 @@ vim.keymap.set('n', 'ga', vim.lsp.buf.code_action)      -- Perform code action
 vim.keymap.set('n', 'grn', vim.lsp.buf.rename)          -- Rename symbol (default)
 vim.keymap.set('n', 'grr', vim.lsp.buf.references)      -- List references (default)
 
+-- /------------+
+-- | COMPLETION |
+-- +------------/
 -- Press <Tab> to select completion
 vim.keymap.set('i', '<Tab>', function()
     if vim.fn.pumvisible() == 1 then
@@ -76,7 +78,7 @@ vim.keymap.set('i', '<Tab>', function()
     end
 end, { expr = true })
 
- -- Press <CR> to select completion
+-- Press <CR> to select completion
 vim.keymap.set('i', '<CR>', function()
     if vim.fn.pumvisible() == 1 then
         return '<C-y>'

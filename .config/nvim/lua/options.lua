@@ -21,8 +21,7 @@ vim.opt.tabstop     = 4     -- Set "\t" size to 4 columns
 vim.opt.shiftwidth  = 4     -- >> and << indent by 4 columns
 vim.opt.expandtab   = true  -- Use "    " instead of "\t"
 vim.opt.autoindent  = true  -- Keep indentation after "\n" (default on)
-vim.opt.smartindent = true  -- Use
--- vim.opt.lazyredraw = true
+vim.opt.smartindent = true
 
 -- /------------+
 -- | COMPLETION |
@@ -50,4 +49,5 @@ vim.opt.winborder   = 'rounded'
 vim.opt.wrap        = false
 vim.opt.exrc        = true
 vim.opt.linebreak   = true
+-- vim.opt.lazyredraw  = true
 -- vim.opt.backspace = { 'start', 'eol', 'indent' }
