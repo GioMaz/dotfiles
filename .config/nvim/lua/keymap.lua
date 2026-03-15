@@ -69,20 +69,13 @@ vim.keymap.set('n', 'grr', vim.lsp.buf.references)      -- List references (defa
 -- /------------+
 -- | COMPLETION |
 -- +------------/
+
 -- Press <Tab> to select completion
 vim.keymap.set('i', '<Tab>', function()
-    if vim.fn.pumvisible() == 1 then
-        return '<C-y>'
-    else
-        return '<Tab>'
-    end
+    return vim.fn.pumvisible() == 1 and '<C-y>' or '<Tab>'
 end, { expr = true })
 
 -- Press <CR> to select completion
 vim.keymap.set('i', '<CR>', function()
-    if vim.fn.pumvisible() == 1 then
-        return '<C-y>'
-    else
-        return '<CR>'
-    end
+    return vim.fn.pumvisible() == 1 and '<C-y>'or '<CR>'
 end, { expr = true })
