@@ -40,5 +40,5 @@ export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=1
 
 # Environments (prefer aliases over environment scripts)
 # cargoinit
-opaminit
+# opaminit
 # nvminit
