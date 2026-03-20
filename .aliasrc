@@ -5,7 +5,11 @@ alias vim='$EDITOR'
 alias nv='$EDITOR ~/.config/nvim/init.lua'
 
 # tmux
-alias t='tmux new-session -A -s TMUX'
+alias t='tmux new-session -A -s default'
+alias tn='tmux new-session -s'
+alias ta='tmux attach -t'
+alias tls='tmux ls'
+alias trm='tmux kill-session -t'
 
 # rlwraps
 alias coqtop='rlwrap coqtop'
