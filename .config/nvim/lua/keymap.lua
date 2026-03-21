@@ -11,7 +11,7 @@ vim.keymap.set('v', 'K', ':m \'<-2<CR>gv=gv')
 vim.keymap.set('x', 'p', '"_dP')
 
 -- Tiling =============================================
-vim.keymap.set('n', '<C-h>', ':winEditing cmd h<CR>')
+vim.keymap.set('n', '<C-h>', ':wincmd h<CR>')
 vim.keymap.set('n', '<C-j>', ':wincmd j<CR>')
 vim.keymap.set('n', '<C-k>', ':wincmd k<CR>')
 vim.keymap.set('n', '<C-l>', ':wincmd l<CR>')
