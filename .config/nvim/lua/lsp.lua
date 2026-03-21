@@ -1,4 +1,4 @@
-vim.lsp.enable({ 'clangd', 'rust_analyzer', 'ty', 'gleam', 'ocamllsp', 'texlab' })
+vim.lsp.enable({ 'clangd', 'rust_analyzer', 'ty', 'gleam', 'ocamllsp', 'texlab', 'tinymist' })
 
 vim.api.nvim_create_autocmd('LspAttach', {
     callback = function(ev)

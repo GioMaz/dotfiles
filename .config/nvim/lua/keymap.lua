@@ -1,6 +1,4 @@
--- /---------+
--- | EDITING |
--- +---------/
+-- Editing ==================================
 vim.keymap.set('n', 'j', 'gj')
 vim.keymap.set('n', 'k', 'gk')
 
@@ -12,10 +10,8 @@ vim.keymap.set('v', 'K', ':m \'<-2<CR>gv=gv')
 
 vim.keymap.set('x', 'p', '"_dP')
 
--- /--------+
--- | TILING |
--- +--------/
-vim.keymap.set('n', '<C-h>', ':wincmd h<CR>')
+-- Tiling =============================================
+vim.keymap.set('n', '<C-h>', ':winEditing cmd h<CR>')
 vim.keymap.set('n', '<C-j>', ':wincmd j<CR>')
 vim.keymap.set('n', '<C-k>', ':wincmd k<CR>')
 vim.keymap.set('n', '<C-l>', ':wincmd l<CR>')
@@ -27,34 +23,24 @@ vim.keymap.set('n', '<M-l>', ':vertical resize +2<CR>')
 
 vim.keymap.set('n', '<C-n>', ':bNext<CR>')
 
--- /-------+
--- | NETRW |
--- +-------/
+-- Netrw ===================================
 vim.keymap.set('n', '<C-f>', ':Explore<CR>')
 vim.keymap.set('n', '<C-s>', ':Sex<CR>')
 vim.keymap.set('n', '<C-c>', ':Vex<CR>')
 
--- /----------+
--- | TERMINAL |
--- +----------/
+-- Terminal =========================================
 vim.keymap.set('n', '<C-t>', ':split | terminal<CR>')
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
 
--- /----------+
--- | MAKEFILE |
--- +----------/
+-- Makefile ================================
 vim.keymap.set('n', 'mm', ':make<CR>')
 vim.keymap.set('n', 'mr', ':make run<CR>')
 vim.keymap.set('n', 'mc', ':make clean<CR>')
 
--- /------+
--- | MISC |
--- +------/
+-- Misc =========================
 vim.keymap.set('n', 'Q', '<Nop>')
 
--- /-----+
--- | LSP |
--- +-----/
+-- Lsp =============================================
 vim.keymap.set('i', '<C-n>', vim.lsp.completion.get)    -- Press <C-n> to open completion
 vim.keymap.set('n', 'gj', vim.diagnostic.open_float)    -- Show diagnostic dialog (must be called after setting 'j' to 'gj')
 vim.keymap.set('n', 'gk', vim.lsp.buf.hover)            -- Show hover dialog (must be called after setting 'k' to 'gk')
@@ -66,10 +52,7 @@ vim.keymap.set('n', 'ga', vim.lsp.buf.code_action)      -- Perform code action
 vim.keymap.set('n', 'grn', vim.lsp.buf.rename)          -- Rename symbol (default)
 vim.keymap.set('n', 'grr', vim.lsp.buf.references)      -- List references (default)
 
--- /------------+
--- | COMPLETION |
--- +------------/
-
+-- Completion ============================================
 -- Press <Tab> to select completion
 vim.keymap.set('i', '<Tab>', function()
     return vim.fn.pumvisible() == 1 and '<C-y>' or '<Tab>'

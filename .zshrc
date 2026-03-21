@@ -23,12 +23,14 @@ zstyle ':completion:*' menu select
 
 # PATH variable
 export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:/opt/homebrew/bin
 export PATH=$PATH:/opt/nvim-linux-x86_64/bin
 export PATH=$PATH:/opt/jflap/bin
 export PATH=$PATH:/opt/c3
 export PATH=$PATH:/opt/mathsat-5.6.15-linux-x86_64/bin
 export PATH=$PATH:/opt/optimathsat-1.7.4-linux-64-bit/bin
+export PATH=$PATH:/opt/helix-25.07.1-x86_64-linux
 
 # Other variables
 export EDITOR=nvim
