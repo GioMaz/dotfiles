@@ -52,6 +52,12 @@ vim.keymap.set('n', 'ga', vim.lsp.buf.code_action)      -- Perform code action
 vim.keymap.set('n', 'grn', vim.lsp.buf.rename)          -- Rename symbol (default)
 vim.keymap.set('n', 'grr', vim.lsp.buf.references)      -- List references (default)
 
+-- TypstPreview ==============================
+vim.keymap.set('n', 'mt', ':TypstPreview<CR>') -- List references (default)
+
+-- MarkdownPreview ==============================
+vim.keymap.set('n', 'ma', ':MarkdownPreview<CR>') -- List references (default)
+
 -- Completion ============================================
 -- Press <Tab> to select completion
 vim.keymap.set('i', '<Tab>', function()
