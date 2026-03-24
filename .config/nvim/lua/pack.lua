@@ -6,6 +6,7 @@ vim.pack.add({
     -- 'https://github.com/github/copilot.vim',
 })
 
+-- TypstPreview =================
 require('typst-preview').setup({
     dependencies_bin = {
         ['tinymist'] = 'tinymist'
