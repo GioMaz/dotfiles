@@ -18,3 +18,13 @@ vim.api.nvim_create_autocmd('LspAttach', {
         end
     end,
 })
+
+vim.lsp.config('texlab', {
+    settings = {
+        texlab = {
+            build = {
+                onSave = true
+            }
+        }
+    }
+})
