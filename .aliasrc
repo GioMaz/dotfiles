@@ -5,11 +5,11 @@ alias vim='$EDITOR'
 alias nv='$EDITOR ~/.config/nvim/init.lua'
 
 # tmux
-alias t='tmux new-session -A -s default'
-alias tn='tmux new-session -s'
-alias ta='tmux attach -t'
-alias tls='tmux ls'
-alias trm='tmux kill-session -t'
+alias t='tmux new-session -A -s default'    # start/attach default session
+alias tn='tmux new-session -s'              # start session
+alias ta='tmux attach -t'                   # attach session
+alias tls='tmux ls'                         # list sessions
+alias trm='tmux kill-session -t'            # remove session
 
 # rlwraps
 alias coqtop='rlwrap coqtop'
@@ -31,9 +31,9 @@ alias opaminit='[[ ! -r /home/giovanni/.opam/opam-init/init.zsh ]] || source /ho
 alias nvminit='[ -s "$HOME/.nvm/nvm.sh" ] && \. "$HOME/.nvm/nvm.sh" && [ -s "$HOME/.nvm/bash_completion" ] && \. "$HOME/.nvm/bash_completion"'
 
 # python3 venv
-alias venv='python3 -m venv'
-alias venvinit='python3 -m venv .venv'
-alias venvactivate='source .venv/bin/activate'
+alias venv='python3 -m venv'                    # venv
+alias venvinit='python3 -m venv .venv'          # create venv
+alias venvactivate='source .venv/bin/activate'  # activate venv
 
 # git
 alias gitu='git add . && git commit && git push'
