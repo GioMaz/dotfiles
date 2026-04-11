@@ -34,6 +34,7 @@ vim.opt.scrollback      = 300   -- Set terminal size
 vim.opt.clipboard   = 'unnamedplus'
 vim.opt.guicursor   = 'i:block'
 vim.opt.winborder   = 'rounded'
+vim.opt.switchbuf   = 'vsplit'
 -- vim.opt.background  = 'light'
 vim.opt.wrap        = false
 vim.opt.exrc        = true

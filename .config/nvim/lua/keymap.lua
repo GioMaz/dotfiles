@@ -49,8 +49,8 @@ vim.keymap.set('n', 'gD', vim.lsp.buf.declaration)      -- Go to declaration
 vim.keymap.set('n', 'gp', vim.diagnostic.goto_prev)     -- Go to prev diagnostic
 vim.keymap.set('n', 'gn', vim.diagnostic.goto_next)     -- Go to next diagnostic
 vim.keymap.set('n', 'ga', vim.lsp.buf.code_action)      -- Perform code action
-vim.keymap.set('n', 'grn', vim.lsp.buf.rename)          -- Rename symbol (default)
-vim.keymap.set('n', 'grr', vim.lsp.buf.references)      -- List references (default)
+vim.keymap.set('n', 'gu', vim.lsp.buf.references)       -- List usages
+vim.keymap.set('n', 'gr', vim.lsp.buf.rename)           -- Rename symbol
 
 -- -- TypstPreview ==============================
 -- vim.keymap.set('n', 'mt', ':TypstPreview<CR>') -- List references (default)
