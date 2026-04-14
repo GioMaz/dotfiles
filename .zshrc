@@ -32,6 +32,8 @@ export PATH=$PATH:/opt/mathsat-5.6.15-linux-x86_64/bin
 export PATH=$PATH:/opt/optimathsat-1.7.4-linux-64-bit/bin
 export PATH=$PATH:/opt/nuXmv-2.1.0-linux64/bin
 export PATH=$PATH:/opt/helix-25.07.1-x86_64-linux
+export PATH=$PATH:/opt/alr-2.1.0-bin-x86_64-linux/bin
+export PATH=$PATH:/opt/zed.app/bin
 
 # Other variables
 export EDITOR=nvim
