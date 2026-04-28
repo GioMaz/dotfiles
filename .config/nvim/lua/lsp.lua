@@ -5,9 +5,9 @@ vim.lsp.enable({
     'gleam',
     'ocamllsp',
     'texlab',
-    'tinymist',
+    -- 'tinymist',
     'ts_ls',
-    'dolmenls',
+    -- 'dolmenls',
 })
 
 vim.api.nvim_create_autocmd('LspAttach', {
