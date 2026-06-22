@@ -1,6 +1,6 @@
 -- Editing ==================================
-vim.keymap.set('n', 'j', 'gj')
-vim.keymap.set('n', 'k', 'gk')
+vim.keymap.set({'n', 'v'}, 'j', 'gj')
+vim.keymap.set({'n', 'v'}, 'k', 'gk')
 
 -- vim.keymap.set('n', '<C-u>', '<C-u>zz')
 -- vim.keymap.set('n', '<C-d>', '<C-d>zz')
@@ -41,7 +41,13 @@ vim.keymap.set('n', 'mc', ':make! clean<CR>')
 vim.keymap.set('n', 'Q', '<Nop>')
 
 -- Lsp =============================================
-vim.keymap.set('i', '<C-n>', vim.lsp.completion.get)    -- Press <C-n> to open completion
+vim.keymap.set('i', '<C-n>', function()
+  if vim.fn.pumvisible() == 1 then
+    return '<C-n>'
+  end
+  vim.lsp.completion.get()
+  return ''
+end, { expr = true })                                   -- Press <C-n> to open completion
 vim.keymap.set('n', 'gj', vim.diagnostic.open_float)    -- Show diagnostic dialog (must be called after setting 'j' to 'gj')
 vim.keymap.set('n', 'gk', vim.lsp.buf.hover)            -- Show hover dialog (must be called after setting 'k' to 'gk')
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition)       -- Go to definition
@@ -58,13 +64,19 @@ vim.keymap.set('n', 'gr', vim.lsp.buf.rename)           -- Rename symbol
 -- -- MarkdownPreview ==============================
 -- vim.keymap.set('n', 'ma', ':MarkdownPreview<CR>') -- List references (default)
 
--- Completion ============================================
--- Press <Tab> to select completion
+-- Completion =========================
 vim.keymap.set('i', '<Tab>', function()
-    return vim.fn.pumvisible() == 1 and '<C-y>' or '<Tab>'
-end, { expr = true })
+    if vim.fn.pumvisible() == 1 then
+        return '<C-y>'
+    else
+        return '<Tab>'
+    end
+end, { expr = true }) -- Press <Tab> to select completion
 
--- Press <CR> to select completion
 vim.keymap.set('i', '<CR>', function()
-    return vim.fn.pumvisible() == 1 and '<C-y>'or '<CR>'
-end, { expr = true })
+    if vim.fn.pumvisible() == 1 then
+        return '<C-y>'
+    else
+        return '<CR>'
+    end
+end, { expr = true }) -- Press <CR> to select completion
