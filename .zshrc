@@ -35,6 +35,7 @@ export PATH=$PATH:/opt/helix-25.07.1-x86_64-linux
 export PATH=$PATH:/opt/alr-2.1.0-bin-x86_64-linux/bin
 export PATH=$PATH:/opt/zed.app/bin
 export PATH=$PATH:/opt/hycomp-1.1.0-linux-x86_64
+export PATH=$PATH:/opt/zig-x86_64-linux-0.15.2
 
 # Other variables
 export EDITOR=nvim
