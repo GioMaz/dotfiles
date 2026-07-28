@@ -29,6 +29,7 @@ alias idfrun='idfinit && idf.py build && idf.py flash && idf.py monitor'
 alias cargoinit='. $HOME/.cargo/env'
 alias opaminit='[[ ! -r /home/giovanni/.opam/opam-init/init.zsh ]] || source /home/giovanni/.opam/opam-init/init.zsh > /dev/null 2> /dev/null'
 alias nvminit='[ -s "$HOME/.nvm/nvm.sh" ] && \. "$HOME/.nvm/nvm.sh" && [ -s "$HOME/.nvm/bash_completion" ] && \. "$HOME/.nvm/bash_completion"'
+alias ghcupinit='[ -f "/home/giovanni/.ghcup/env" ] && . "/home/giovanni/.ghcup/env"'
 
 # python3 venv
 alias venv='python3 -m venv'                    # venv
