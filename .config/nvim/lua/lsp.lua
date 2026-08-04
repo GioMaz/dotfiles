@@ -7,7 +7,7 @@ vim.lsp.enable({
     'texlab',
     -- 'tinymist',
     'ts_ls',
-    -- 'dolmenls',
+    'marksman',
 })
 
 vim.api.nvim_create_autocmd('LspAttach', {

@@ -44,10 +44,10 @@ export OPENER=xdg-open
 export HOMEBREW_TEMP=/tmp
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=1
-# export IDF_PATH=$HOME/.espressif
+#export IDF_PATH=$HOME/.espressif
 
 # Environments (prefer aliases over environment scripts)
-# cargoinit
+#cargoinit
 opaminit
-ghcupinit
-# nvminit
+#ghcupinit
+#nvminit

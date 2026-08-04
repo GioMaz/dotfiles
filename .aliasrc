@@ -58,6 +58,7 @@ alias ardupl='arduino-cli upload -p /dev/ttyACM0 -b arduino:avr:uno'
 
 # system programs
 alias speed='speedtest'
+alias open='xdg-open'
 alias q='exit'
 alias e='exit'
 alias f='lf'

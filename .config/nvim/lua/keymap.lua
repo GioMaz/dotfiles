@@ -60,9 +60,9 @@ vim.keymap.set('n', 'gr', vim.lsp.buf.rename)           -- Rename symbol
 
 -- -- TypstPreview ==============================
 -- vim.keymap.set('n', 'mt', ':TypstPreview<CR>') -- List references (default)
---
+
 -- -- MarkdownPreview ==============================
--- vim.keymap.set('n', 'ma', ':MarkdownPreview<CR>') -- List references (default)
+-- vim.keymap.set('n', 'mp', ':MarkdownPreview<CR>') -- List references (default)
 
 -- Completion =========================
 vim.keymap.set('i', '<Tab>', function()

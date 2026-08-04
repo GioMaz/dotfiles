@@ -1,5 +1,5 @@
 # interpreter for shell commands (needs to be POSIX compatible)
-# set shell zsh
+#set shell zsh
 
 # set '-eu' options for shell commands
 # These options are used to have safer shell commands. Option '-e' is used to
@@ -27,28 +27,23 @@ map <enter> shell
 map x $$f
 map X !$f
 
-# my mappings
-map <backspace2>    set hidden!
-map b               $vimv
-map <esc>           top
-map <c-e>           up
-map <c-y>           down
+# show hidden files
+map <backspace2> set hidden!
+
+# bulk rename
+map b $vimv
 
 # define a custom 'open' command
 # This command is called when current file is not a directory. You may want to
 # use either file extensions and/or mime types here. Below uses an editor for
 # text files and a file opener for the rest.
-cmd open ${{
-    case $(file --mime-type $f -b) in
-        text/*) $EDITOR $fx;;
-        # remove setsid in macos
-        *) for f in $fx; do setsid $OPENER $f > /dev/null 2> /dev/null & done;;
+cmd open &{{
+    set -f
+    case $(file --mime-type -Lb "$f") in
+        text/*) lf -remote "send $id \$$EDITOR \$fx";;
+        *) for f in $fx; do $OPENER "$f" > /dev/null 2> /dev/null & done;;
     esac
 }}
-
-# define a custom 'rename' command without prompt for overwrite
-# cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
-# map r push :rename<space>
 
 # make sure trash folder exists
 %mkdir -p ~/.trash
@@ -57,18 +52,9 @@ cmd open ${{
 # (also see 'man mv' for backup/overwrite options)
 cmd trash %set -f; mv $fx ~/.trash
 
-# define a custom 'delete' command
-# cmd delete ${{
-#     set -f
-#     printf "$fx\n"
-#     printf "delete?[y/n]"
-#     read ans
-#     [ $ans = "y" ] && rm -rf $fx
-# }}
-
 # use '<delete>' key for either 'trash' or 'delete' command
-# map <delete> trash
-# map <delete> delete
+map <delete> trash
+#map <delete> delete
 
 # extract the current file with the right command
 # (xkcd link: https://xkcd.com/1168/)
