@@ -3,7 +3,8 @@ vim.pack.add({
     -- 'https://github.com/chomosuke/typst-preview.nvim',
     -- 'https://github.com/iamcco/markdown-preview.nvim',
     -- 'https://github.com/whonore/Coqtail',
-    -- 'https://github.com/github/copilot.vim',
+    'https://github.com/github/copilot.vim',
+    'https://github.com/scalameta/nvim-metals',
     -- 'https://github.com/nvim-treesitter/nvim-treesitter',
 })
 

@@ -37,6 +37,7 @@ export PATH=$PATH:/opt/zed.app/bin
 export PATH=$PATH:/opt/hycomp-1.1.0-linux-x86_64
 export PATH=$PATH:/opt/zig-x86_64-linux-0.15.2
 export PATH=$PATH:/opt/idea/bin
+export PATH="$PATH:/home/giovanni/.local/share/coursier/bin"
 
 # Other variables
 export EDITOR=nvim

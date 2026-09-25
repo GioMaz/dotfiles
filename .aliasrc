@@ -10,6 +10,7 @@ alias tn='tmux new-session -s'              # start session
 alias ta='tmux attach -t'                   # attach session
 alias tls='tmux ls'                         # list sessions
 alias trm='tmux kill-session -t'            # remove session
+alias tmv='tmux rename-session -t'          # rename session
 
 # rlwraps
 alias coqtop='rlwrap coqtop'
