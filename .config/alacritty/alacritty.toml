@@ -1,16 +1,10 @@
-[keyboard]
-bindings = [
-    { key = "N", mods = "Control|Shift", command = { program = "bash", args = ["-c", "alacritty"] } },
-    # { key = "U", mods = "Control|Shift", action = "ScrollToTop" },
-    # { key = "D", mods = "Control|Shift", action = "ScrollToBottom" },
-]
-
 [font]
-normal = { family = "Input Mono", style = "Regular" }
-bold = { family = "Input Mono", style = "Bold" }
-italic = { family = "Input Mono", style = "Italic" }
-bold_italic = { family = "Input Mono", style = "Bold Italic" }
-size = 15.0
+normal = { family = "Fira Code ", style = "Regular" }
+bold = { family = "Fira Code", style = "Bold" }
+italic = { family = "Fira Code", style = "Italic" }
+bold_italic = { family = "Fira Code", style = "Bold Italic" }
+size = 9.0
 
 [window]
 startup_mode = "Maximized"
+decorations = "None"
